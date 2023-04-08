@@ -1,0 +1,7 @@
+.pagination-btn{
+    margin: 50px;
+    font-size: 18px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
