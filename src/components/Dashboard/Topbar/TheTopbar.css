@@ -1,0 +1,12 @@
+.topbar-wrapper{
+    padding: 20px 20px;
+    display: flex;
+    justify-content:space-between;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.bars{
+    cursor: pointer;
+    font-size: 30px;
+}

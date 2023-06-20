@@ -1,0 +1,18 @@
+.navbar-wrapper{
+    padding: 5px;
+}
+
+a.navbar-brand {
+    font-size: 25px;
+}
+
+.navbar-nav a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #999999;
+    padding-left: 8px;
+}
+
+.navbar-nav a:hover{
+    color: #000000;
+}

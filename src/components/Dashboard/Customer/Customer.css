@@ -1,0 +1,12 @@
+.customer-wrapper{
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.customer-content{
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    min-height: 100vh;
+}
