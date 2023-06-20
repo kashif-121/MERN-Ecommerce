@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import {
-Container,
-Row,
-Col
+    Container,
+    Row,
+    Col
 } from 'react-bootstrap';
-import Item from '../Item/Item'
-import Category from '../Category/Category'
-import Loader from '../UI/Loader/Loader'
-import Pagination from '../UI/Pagination/Pagination'
+import Loader from 'components/UI/Loader/Loader'
+import Pagination from 'components/UI/Pagination/Pagination'
+import Item from 'components/Item/Item';
 const Main = () => {
     const [loader, setLoader] = useState(true)
     const [items, setItems] = useState([])
@@ -27,25 +26,18 @@ const Main = () => {
     }
     return (
         <>
-        {
-            loader === true ? <Loader/> :<Container>
-            <Row>
-                <Col md={4} lg={4}>
-                    <Category></Category>
-                </Col>
-                <Col md={8} lg={8}>
-                    <Row>
-                    {
-                        items?.slice(0, prevItems).map(item => <Item item={item} key={item.id}></Item>)
-                    }
-                    </Row>
-                </Col>
-            </Row>
             {
-                prevItems < items.length  ? <Pagination moreItems={showMoreItems}></Pagination> : ''
+                loader ? <Loader /> : <Container>
+                    <Row>
+                        {
+                            items?.slice(0, prevItems).map(item => <Item item={item} key={item.id}></Item>)
+                        }
+                    </Row>
+                    {
+                        prevItems < items.length && (<Pagination moreItems={showMoreItems}></Pagination>)
+                    }
+                </Container>
             }
-        </Container>
-        }
         </>
     )
 }

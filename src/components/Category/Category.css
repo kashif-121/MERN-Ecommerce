@@ -12,3 +12,11 @@ a.sidebar-nav{
 a.sidebar-nav:hover{
     color: #000;
 }
+
+table{
+    width: 100%;
+}
+
+table,thead,tr, td{
+    border: 1px solid black;
+}

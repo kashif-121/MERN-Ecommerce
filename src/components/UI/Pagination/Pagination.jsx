@@ -4,7 +4,9 @@ import './Pagination.css'
 
 const Pagination = ({moreItems}) => {
   return (
-        <Button variant="dark" className="pagination-btn" onClick={moreItems}>Load More</Button>
+    <div className="pagination-wrapper">
+      <Button variant="dark" className="pagination-btn" onClick={moreItems}>Load More</Button>
+    </div>
   )
 }
 

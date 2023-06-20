@@ -1,7 +1,12 @@
-.pagination-btn{
-    margin: 50px;
-    font-size: 18px;
-    padding: 0 20px;
+.pagination-wrapper{
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+
+.pagination-btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 50px 0;
+  width: 300px;
 }
