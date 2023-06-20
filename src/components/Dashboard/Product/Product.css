@@ -1,0 +1,12 @@
+.product-wrapper{
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-content{
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    min-height: 100vh;
+}

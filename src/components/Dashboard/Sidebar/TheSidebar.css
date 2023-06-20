@@ -1,0 +1,35 @@
+.sidebar-wrapper{
+    width: 20%;
+    padding: 30px 20px;
+    background-color: #ffff;
+    margin-right: 30px;
+}
+
+.sidebar-wrapper a{
+    text-decoration: none;
+    color: #888888;
+}
+
+.sidebar-wrapper .brand{
+    font-size: 30px;
+}
+
+.sidebar-wrapper .navbar{
+    padding: 30px 10px;
+}
+
+.sidebar-wrapper .navbar li{
+    width: 100%;
+    line-height: 40px;
+    transition: .4s all ease-in-out;
+}
+
+/* .sidebar-wrapper .navbar li:hover {
+    cursor: pointer;
+    background-color: rgb(219, 216, 216);
+    border-radius: 5px;
+} */
+
+.sidebar-wrapper a:hover{
+    color: #000000;
+}

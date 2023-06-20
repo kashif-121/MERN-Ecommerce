@@ -1,0 +1,14 @@
+.category-wrapper{
+    padding: 30px 30px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+a.sidebar-nav{
+    text-decoration: none;
+    color: #888888;
+}
+
+a.sidebar-nav:hover{
+    color: #000;
+}
