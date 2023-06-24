@@ -26,14 +26,14 @@ const Sidebar = () => {
 
     return (
         <div className="sidebar-wrapper">
+            <ul>
             {
                 categories.map(i => (
-                    <ul>
                         <li key={i.id}><Link to={"products/"+i.name}>{i.name}</Link></li>
-                    </ul>
-                )
-                )
-            }
+                        )
+                        )
+                    }
+            </ul>
         </div>
     )
 }

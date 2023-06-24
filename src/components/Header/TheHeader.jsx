@@ -19,8 +19,8 @@ const TheHeader = () => {
             <Link to="/">Categories</Link>
           </Nav>
           <Nav className="ml-auto">
-            <Link to="/login">Login</Link>
-            <Link to="/register">Register</Link>
+            <Link to="/auth/login">Login</Link>
+            <Link to="/auth/register">Register</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

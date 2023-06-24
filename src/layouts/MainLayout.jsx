@@ -6,9 +6,13 @@ import {
 /**Components import */
 import TheHeader from 'components/Header/TheHeader'
 import Sidebar from 'components/Sidebar/Sidebar';
+import { Route, Routes } from 'react-router-dom';
+import Main from 'components/Main/Main';
+import CatProduct from 'components/CatProducts/CatProduct';
+import ItemView from 'components/ItemView/ItemView';
 
 
-const MainLayout = ({ children }) => {
+const MainLayout = () => {
   return (
     <>
     <TheHeader/>
@@ -17,7 +21,11 @@ const MainLayout = ({ children }) => {
             <Sidebar></Sidebar>
         </Col>
         <Col md={10} lg={10} sm={12}>
-        {children}
+        <Routes>
+          <Route path="/" element={<Main />}></Route>
+          <Route path="products/:cat" element={<CatProduct/>}></Route>
+          <Route path="/product/:id" element={<ItemView />}></Route>
+        </Routes>
         </Col>
     </Row>
     </>
